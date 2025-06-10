@@ -17,13 +17,27 @@
 - High availability for the system
 - Secuirty considerations
 
+## Data models:
+
+- The Tweet data model definition:
+
+![Twitter Data Model](/Images/twitter-mock/tweet-data-model.png)
+
+- The Reply data model definition:
+
+![Twitter Reply Data Model](/Images/twitter-mock/reply-model.png)
+
+- The User data model definition:
+
+![Twitter User Data Model](/Images/twitter-mock/user-model.png)
+
 
 ## Workflow
 
 Client -> Load balancer (Round-bin) -> API gateway (forward request to the servers) -> 
 
 1. Tweet/Reply CRUD service
-  - Save tweet textable contents into a non-relational database (NonSQL: MongoDB), faster I/O operations
+  - Save tweet textable contents into a non-relational database (NonSQL: MongoDB), faster write operations
   - Save tweet media contents into a object storage into AWS S3 (faster read purpose)
   - Add a rate limiter for writing operations, so which aims to prevent DDoS attack, prevent unexpected bills by abuse the service and reduce server load in order to prevent server crash during high spikes of requests
   - Provide a cache for reading the popular tweets, also fast reading purpose
@@ -68,15 +82,15 @@ Client -> Load balancer (Round-bin) -> API gateway (forward request to the serve
   - Need to add a Auth service to handle the user authentication, authorization and account (permission maybe) management (security considerations)
   - Add input validations for input (correct data pass through)
 
--> Establish a CDN to client website, so user can read the website faster (reduce latency)
+-> Establish a CDN to client website, so user can read the website faster (reduce latency) 
 
--> Add some observability for the system, like metrics, logs, etc, so we can monitor the system and make sure the system is running smoothly, eg: Health checks, Logging, alerts (bug/error detection) tools: 
+-> Add some `observability` for the system, like metrics, logs, etc, so we can monitor the system and make sure the system is running smoothly, eg: Health checks, Logging, alerts (bug/error detection) tools: 
   - Prometheus: collect metrics from the system
   - Grafana: visualize the metrics
   - ELK: collect logs from the system
   - Kibana: visualize the logs
 
--> Testings considerations:
+-> `Testings` considerations:
   - Unit tests: test the individual components of the system
   - Integration tests: test the interaction between the components of the system
   - End-to-end tests: test the entire system
@@ -87,6 +101,6 @@ Client -> Load balancer (Round-bin) -> API gateway (forward request to the serve
 
 ## Diagram ~
 
-![Twitter Mock](/Images/twitter-mock.png)
+![Twitter Mock](/Images/twitter-mock/workflow.png)
 
 <!-- Press Ctrl / CMD + Shift + V to preview the MD document inside VSCode, Cursor -->

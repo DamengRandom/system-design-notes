@@ -12,15 +12,11 @@ This is one of examples about the way to explore how to prepare frontend system 
 
 ## Non-functional requirements
 
-- Accessability support (a11y)
+- Accessability support (`a11y`)
 - Should be mobile friendly (responsive display)
-- Should support internationalization (i18n)
+- Should support internationalization (`i18n`)
 - Should be performant (fast loading)
-- Some observability for the system, like metrics, logs, etc, so we can monitor the system and make sure the system is running smoothly, eg: Health checks, Logging, alerts (bug/error detection) tools:
-  - Prometheus: collect metrics from the system
-  - Grafana: visualize the metrics
-  - ELK: collect logs from the system
-  - Kibana: visualize the logs
+- Some observability for the system, like metrics, logs, etc, `monitoring`
 
 
 ## Architecture
@@ -125,18 +121,19 @@ type FeedItemComments = {
   - REST vs GraphQL:
 
   REST:
-  - Simple and easy to understand
-  - Well-established and widely and commonly used
-  - No need to learn a new query language
-  - HTTP2 compatibility support
+  - Simple to understand and easy & commonly to be used [✅]
+  - Make multiple requests to the server to fetch the data (/users, /users/1/posts ...) [❌]
+  - No need to learn a new query language [✅]
+  - Need to define a API documentation, eg: `OpenAPI` or `Swagger` [❌]
+  - Need to use tools, eg: `Postman` to test the API
 
   GraphQL:
-  - More flexible and powerful
-  - Can fetch multiple resources in a single request
-  - Can fetch data in a specific shape (not fetching all the data payload, more flexible)
-  - Has its own query language (GraphQL query language)
-  - Defines the specific schema for the data (more flexible)
-  - HTTP2 compatibility support
+  - Fetch what you need, customized data shape [✅]
+  - Fetch all the data in a single request [✅]
+  - Sometimes, deeply nested query could cause expensive query performance [❌]
+  - Has built in introspection tools, eg: `Apollo Client` to explore the schema and query the data [✅]
+  - Need to use tools, eg: `GraphQL Playground` to test the API
+
 
 
 ## Optimizations & Performance (More general answers)
@@ -166,5 +163,18 @@ type FeedItemComments = {
 - Use `CORS` (Cross-Origin Resource Sharing) to prevent the malicious requests from the client
 - Use `HTTPOnly` to prevent the malicious scripts from the client
 - Use `Secure` to prevent the malicious scripts from the client
+
+
+## My own thoughts
+
+The steps of system design interview could be concluded as following:
+
+- Grab & Understand the business `functional requirements` + `non-functional requirements`
+- Structure the `components` (Break UI into smaller components)
+- Start with `data models` design based on the components
+- Do the `API design` (Choose the right tool based on specific interview question)
+- Provide the valid points of `optimizations & performance` (Eg: rendering, bundling, API efficiency, monitoring tools, etc)
+- Some `security` considerations (Eg: CSRF, XSS, etc)
+
 
 To be continued (more new contents will be added later) ...

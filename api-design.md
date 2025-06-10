@@ -91,4 +91,4 @@ gRPC:
     - Efficiency
   - Cons:
     - less human readable
-    - only support HTTP/2 protocl
+    - only support HTTP/2 protocol

@@ -2,7 +2,7 @@
 
 ## What is an API Gateway?
 
-- API Gateway is a single entry point and routes the APi request to backend services
+- API Gateway is a single entry point and routes the API requests to backend services
 
 Use it when you have multiple services and want to centralise access, authentication, logging, and request handling.
 

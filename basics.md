@@ -21,7 +21,7 @@
 - Storing data: store data in a way that is easy to retrieve
   - Database choice:
     - SQL database: relational database, eg: MySQL, PostgreSQL etc.
-    - NoSQL database: non-relational database, eg: MongoDB, Cassandra etc.
+    - NonSQL database: non-relational database, eg: MongoDB, Cassandra etc.
   - Key topics:
     - Access patterns
     - Indexing stratgies

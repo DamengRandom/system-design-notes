@@ -14,7 +14,7 @@
 
 - Non-relational database:
   - MongoDB, Redis, Cassandra, etc
-  - Does not have primary &foreign key relationship
+  - Does not have primary & foreign key relationship
   - Saved data as key-value pairs, JSON format
   - Simple queires, compared with relational database, which is more complex
 
