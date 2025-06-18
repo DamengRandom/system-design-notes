@@ -34,7 +34,7 @@
 
 ## Workflow
 
-Client -> Load balancer (Round-bin) -> API gateway (forward request to the servers) -> 
+Client -> Load balancer (Round-bin) -> API gateway (forward requests to the servers) -> 
 
 1. Tweet/Reply CRUD service
   - Save tweet textable contents into a non-relational database (NonSQL: MongoDB), faster write operations

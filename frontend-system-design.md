@@ -148,6 +148,7 @@ type FeedItemComments = {
 - Use `Caching` to reduce the number of requests to the server, if the data is not changed frequently
 - Use `CDN` (Content Delivery Network) for reducing latency, and improve the performance of the website (user can read the website faster which is from nearest geographic located server)
 - Use `loading-state (pre-loading)` mechinsm to show the users the latest state of the page or specific area of the page
+- Consider `responsive design` to make the website more friendly to different devices (using `CSS media queries` to adjust the UI based on the device width and tools for testing, eg: `Responsive Design Checker`)
 - Use `GraphQL` to fetch the specific shape of data from the server, which is more flexible and sufficient (Soemtimes, can use Apollo Cache to cache the data, more performance improvement)
 - Could consider to introduce `Micro-frontend architecture` develop a website, because, for some pages, like home page, maybe more static contents related, which can be server side rendered, for some forms view, more user data interaction UIs, we can build as client side redenring for better state management and interactions handling, which means the different pages can choose to use different rendering techniques, which is more flexible and efficient.
 - Use third party tools eg: `lighthouse`, `Chrome DevTools` to analyze the performance of the website, `web vitals`: LCP (largest contentful paint), FCP (first contentful paint), FID (first input delay), etc

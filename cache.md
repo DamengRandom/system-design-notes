@@ -42,6 +42,6 @@
 
 ## Reverse proxy:
 
-- Reverse proxy: its a type of proxy server, which hide the server side identity and proxy the request to the backend server, client side talk to the proxy server, which is not directly request to the backend server, which protects the server from direct access
-- Load balancers: reverse proxy to distribute the traffic to multiple servers (to prevent one server overloaded issue)
-- Nginx: open source web server, load balancer, reverse proxy, caching server
+- `Reverse proxy`: its a type of proxy server, which hide the server side identity and proxy the request to the backend server, client side talk to the proxy server, which is not directly request to the backend server, which protects the server from direct access
+- `Load balancers`: reverse proxy to distribute the traffic to multiple servers (to prevent one server overloaded issue)
+- `Nginx`: open source web server, load balancer, reverse proxy, caching server
