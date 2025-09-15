@@ -1,4 +1,4 @@
-CCDAO Structure
+# CCDAO Structure
 
 I call this is a structure (skeleton) to answer the system design questions within 5 steps. Thanks for sharing [Juntao](https://www.youtube.com/@icodeit.juntao)
 
@@ -6,15 +6,17 @@ I call this is a structure (skeleton) to answer the system design questions with
 
 - Full name of current structure: 
 
-  - Collect information
+  - (C)ollect information
 
-  - Component structure
+  - (C)omponent structure
 
-  - Data Modeling
+  - (D)ata Modeling
 
-  - 
+  - (A)PI design
 
-Specific Example: Typeahead (Google Search)
+  - (O)ptimization Strategies
+
+## Specific Example: Typeahead (Google Search)
 
 1. Collect information:
   - Questions: 
