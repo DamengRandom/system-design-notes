@@ -2,7 +2,7 @@
 
 ## What is load balancer?
 
-- Load balancer: distributes the netwrok traffic across multiple servers to improve performance (faster response time) and reliability (no single point of failure)
+- Load balancer: distributes the netwrok traffic across multiple servers to improve performance (`faster response time`) and reliability (no single point of failure)
 
 - Common ways to share the traffic: round-robin, least connections and IP hash, consistent hashing and etc
   - Round-robin: each request is sent to a different server, follow the sequence of servers, when reaches to the last server, it will start from the first server again

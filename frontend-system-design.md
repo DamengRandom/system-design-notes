@@ -171,7 +171,7 @@ type FeedItemComments = {
 The steps of system design interview could be concluded as following:
 
 - Grab & Understand the business `functional requirements` + `non-functional requirements`
-- Structure the `components` (Break UI into smaller components)
+- Structure the `components` (Break down UI into smaller components)
 - Start with `data models` design based on the components
 - Do the `API design` (Choose the right tool based on specific interview question)
 - Provide the valid points of `optimizations & performance` (Eg: rendering, bundling, API efficiency, monitoring tools, etc)
